@@ -1,0 +1,132 @@
+
+body{
+	background: #003152; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#003152, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#003152, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#003152, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#003152, white); /* Standard syntax */
+	background-repeat:no-repeat;
+	
+}
+
+#wrapper {
+	margin:auto;
+	width:80%;
+	min-width:960px;
+	max-width:2048px;
+	box-shadow:3px 3px #cccccc;
+	background-color:#17a;
+}
+#header{
+	background-color:#003152;
+	height:60px;
+	background-image:url(logo.png);
+	background-repeat: no-repeat;
+	height:88px;
+	text-align:center;
+	padding-top:15px;
+	font-family:serif;
+	margin-bottom: 0;
+}
+main{
+	background-color:#cde6ff;
+	
+	padding:1px 20px 20px 30px;
+}
+
+h3{
+	text-shadow: 2px 2px 8px #555555;
+}
+#randomImage{
+	border:1px solid #000000;
+}
+
+footer{
+    height:100px;
+    width: 100%;
+	padding-top:10px;
+    overflow:hidden;
+	text-align:center;
+	background-color:#cdcdcd
+}
+#mobile{
+	display: none;
+	
+}
+#desktop{
+	display: inline;
+}
+@media only screen and (max-width: 64em) {
+	body{
+		
+		margin: 0px;
+	}
+	#wrapper{
+		min-width: 0px;
+		width: auto;
+		box-shadow: none;
+	}
+	main{
+		margin-left: 0px;
+	}
+	nav{
+		float: none;
+		width: auto;
+		text-align: center;
+		padding: 0.5em;
+	}
+	nav li{
+		display: inline;
+		padding-top: .25em;
+		padding-bottom: .25em;
+		padding-left: .75em;
+		padding-right: .75em;
+	}
+	
+	footer{
+		margin-left: 0px;
+	}
+	
+}
+@media only screen and (max-width: 37.5em) {
+	siteName{
+		padding-top: 1em;
+		
+	}
+	
+	main{
+		padding-top: .1em;
+		padding-bottom: .1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 90%;
+		
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	nav{
+		padding: 0px;
+		
+	}
+	nav ul{
+		display:block;
+	}
+	nav li{
+		display: block;
+		margin: 0px;
+		
+	}
+	
+	nav a{
+		display: block;
+	}
+
+	#mobile{
+		display: inline;
+	}
+	#desktop{
+		display: none;
+	}
+}
+	  
